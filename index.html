@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+          
+    </head>
+    <body> 
+
+                <h1 class="book">Bookmarker</h1>
+                <hr class="hr1">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-8 p-5 m-5">
+                <h3 class="text-center">Bookmark your favorite sites</h3>
+                <p class="text-center mt-3 text-muted">site name <span class=" text-danger">*(required)</span></p>
+                <input id="webSiteName" type="text" class="form-control " placeholder="Entre the website name">
+                <div id="nameAlert" class="alert text-dark d-none alert-danger mt-2">site name must contain from 2 to 8 char</div>
+                <p class="text-center mt-3 text-muted">site URL <span class=" text-danger">*(required)</span></p>
+           
+                <input id="webSiteUrl" type="text" class="form-control " placeholder="Entre the website URL">
+                <div id="urlALert" class="urlAlert urlAlert-danger text-dark mt-2 d-none"></div>
+
+                    
+            <div   class="flex"><button id="addBtn" disabled type="button" class="btn btn-primary mt-3 m-auto">Submit</button></div>
+                        
+            </div>
+                </div>
+                
+                <input onkeyup="search(this.value)" id="searchIndex" class="form-control p-2 mt-3 rounded-5 bg-light" type="text" placeholder="Search">
+                
+                <section id="results">
+                  
+                </section>
+
+
+            <hr class="hr2 ">
+            <span>© 2019 Bookmarker Inc.</span>
+           
+       <script src="js/bootstrap.bundle.min.js"></script>
+       <script src="js/main.js"></script>
+    </body>
+</html>
